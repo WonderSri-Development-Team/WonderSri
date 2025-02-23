@@ -1,5 +1,5 @@
 // File: src/components/FAQ.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -11,14 +11,9 @@ const FAQ = () => {
         "WonderSri is your virtual tour guide, helping you explore Sri Lanka with real-time insights, navigation and most importantly, safety.",
     },
     {
-      question: "How can I download the app?",
+      question: "Is WonderSri free to use?",
       answer:
-        "You can download the app from the App Store or Play Store by clicking the respective buttons on our website.",
-    },
-    {
-      question: "Is there a subscription fee?",
-      answer:
-        "No, WonderSri is free to use for all enthusiatic travellers! Enjoy all features without any subscription fees.",
+        "Yes, WonderSri is free to use for all enthusiatic travellers! Enjoy all features without any subscription fees.",
     },
     {
       question: "How does WonderSri ensure my safety?",

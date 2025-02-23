@@ -1,5 +1,5 @@
 // File: src/components/Hero.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { Video, VideoOff } from "lucide-react";
 
 export default function HeroSection() {
