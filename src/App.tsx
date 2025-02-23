@@ -1,10 +1,11 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import AppPreview from './components/AppPreview';
-import Team from './components/Team';
-import Footer from './components/Footer';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import AppPreview from "./components/AppPreview";
+import Team from "./components/Team";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <AppPreview />
       <Team />
+      <FAQ />
       <Footer />
     </div>
   );

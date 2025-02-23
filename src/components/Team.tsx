@@ -7,14 +7,14 @@ const team = [
     role: "Backbone Architect",
     image: "./src/assets/Aaron.png",
     github: "https://github.com/AaronJE45",
-    linkedin: "https://www.linkedin.com/in/aaron-profile",
+    linkedin: "https://www.linkedin.com/in/aaronemmanuel",
   },
   {
     name: "Iksura Wickramathunga",
     role: "Server Sultan",
     image: "./src/assets/Inura.png",
     github: "https://github.com/iksurainura",
-    linkedin: "https://www.linkedin.com/in/iksura-profile",
+    linkedin: "https://www.linkedin.com/in/iksura",
   },
   {
     name: "Chamath Matharage",
@@ -28,14 +28,14 @@ const team = [
     role: "Interface Captain",
     image: "./src/assets/Sadaru.png",
     github: "https://github.com/sadaru-hansaka",
-    linkedin: "https://www.linkedin.com/in/sadaru-profile",
+    linkedin: "https://www.linkedin.com/in/sadaru-hansaka-8a7600293",
   },
   {
     name: "Minasha Katugampala",
     role: "Interface Architect",
     image: "./src/assets/Minasha.png",
     github: "https://github.com/MinashaKatugampala",
-    linkedin: "https://www.linkedin.com/in/minasha-profile",
+    linkedin: "https://www.linkedin.com/in/minasha-katugampala-8661b827a",
   },
   {
     name: "Kalpa Perera",
