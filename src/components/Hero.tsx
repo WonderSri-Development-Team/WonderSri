@@ -1,17 +1,35 @@
+// File: src/components/Hero.tsx
+import React, { useState } from "react";
+import { Video, VideoOff } from "lucide-react";
+
 export default function HeroSection() {
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const toggleVideo = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <div>
       {/* Hero Section with Video */}
       <div className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Video */}
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          src="/src/assets/1225.mp4" // Adjust the path to your video
-          autoPlay
-          loop
-          muted
-          playsInline
-        ></video>
+        {isPlaying ? (
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            src="/src/assets/1225.mp4" // Adjust the path to your video
+            autoPlay
+            loop
+            muted
+            playsInline
+          ></video>
+        ) : (
+          <img
+            src="/src/assets/static.png" // Adjust the path to your image
+            alt="Alternative Content"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        )}
 
         {/* Overlay for better readability */}
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -32,7 +50,17 @@ export default function HeroSection() {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mt-6 font-montserrat">
             Wonder <span className="text-blue-400">Sri</span>
           </h1>
+          <p className="text-white">Explore Sri Lanka Like Never Before!</p>
         </div>
+
+        {/* Toggle Button */}
+        <button
+          onClick={toggleVideo}
+          className="absolute bottom-4 right-4 bg-white rounded-full p-2 shadow-lg hover:bg-gray-200 transition"
+          aria-label="Toggle Video"
+        >
+          {isPlaying ? <VideoOff /> : <Video />}
+        </button>
       </div>
     </div>
   );

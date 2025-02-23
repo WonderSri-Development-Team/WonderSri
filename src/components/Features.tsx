@@ -50,7 +50,7 @@ const Features = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
             className="text-gray-600 max-w-2xl mx-auto text-lg"
           >
-            Your personal companion for an authentic Sri Lankan experience.
+            Your ultimate companion for exploring the wonders of Sri Lanka.
           </motion.p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
