@@ -30,13 +30,16 @@ const features = [
 
 const Features = () => {
   return (
-    <div id="features" className="py-16 bg-gradient-to-br from-blue-50 to-white">
+    <div
+      id="features"
+      className="py-16 bg-gradient-to-br from-blue-50 to-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
             className="text-4xl font-bold text-gray-900 mb-4"
           >
             Experience Sri Lanka with Guru
@@ -44,7 +47,7 @@ const Features = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
             className="text-gray-600 max-w-2xl mx-auto text-lg"
           >
             Your personal companion for an authentic Sri Lankan experience.
@@ -56,7 +59,7 @@ const Features = () => {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
               className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all border border-gray-100"
             >
